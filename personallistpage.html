@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Personal list</title>
+</head>
+	<style>
+		body{
+			background-color: aquamarine;
+			background-image: url("personallist background.jpg")
+		} 
+		a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+	/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+	</style>
+<body>
+	<h1 title="Go Back" style="text-align: right"> <b><a href="lists.html" target="_self">&larr;</a></b></h1>
+	<h1 style="font: 'Apple Chancery'; color: gold; text-align: center">Personal list </h1>
+</body>
+<form action="/action_page.php">
+  <label for="fname"
+		 body{
+		 style="font: 'Big Caslon Medium';text-align: center"
+		 }
+		 >First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname"
+		 body{
+		 style="font: 'Big Caslon Medium';text-align: center"
+		 }
+		 >Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br> <! Where does it send them after they hit submit?>
+  <input type="submit" value="Submit">
+</form>	
+	<form action="/action_page.php">
+  <label for="List" 
+		 body{
+		 style="font: 'Big Caslon Medium';text-align: center"
+		 }
+		 > What Do You Want For Christmas?(url)</label> <! What if I don't want to have it be a URL? I just want people to be able to type.>
+  <input type="url" id="homepage" name="homepage">
+  <input type="submit" value="Submit">
+</form>
+</html>
+<!For future lists, copy and paste.>
