@@ -46,7 +46,29 @@ a:active {
   color: red;
 }
 	
-	
+	.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 	</style>
 <title>Santa's Secret List!</title>
 </head>
@@ -161,8 +183,14 @@ window.onload=function(){
 
 	<h2 style="text-align:center;font-family:'Apple Chancery';color:red"> 
 		 ...Til' Christmas!!!</h2>
-<h1 style="font-family: 'Big Caslon Medium';color:green"> About</h1><h1 style="font-family: 'Big Caslon Medium';color:green;text-align:right"> Contact</h1> <! How do I make text appear and disapper once i click a text?>
+	<div class="tooltip" style="font-family: 'Big Caslon Medium';color:green;font-size: 30pt">About
+  <span class="tooltiptext">You though you knew them well, but now they’re asking for things so alien it’s driving you crazy! Not only that, but you have so many lists to keep track of, you’re covered head to toe in them! If only you had Santa’s List… Now you can! Santa’s Secret List makes it so you have a compact and organized way to keep up with your friends’ and family’s wants this holiday season!</span> 
+		
+		
+</div>
 <h1 style="text-align:center;font-family: 'Big Caslon Medium';color:green;"><b><a href="lists.html" target="_self">Lists</a></b></h1>
-
+	<div class="tooltip" style="font-family: 'Big Caslon Medium';text-align: right; color:green;font-size: 30pt">Contact
+  <span class="tooltiptext">Phone number: 210-xxx-xxxx, Email: Qthomas6@student.alamo.edu</span>
+</div>
 </body>
 </html>
